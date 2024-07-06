@@ -115,4 +115,46 @@ echo " "
 
 echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 17.0.3.1.1"
 podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-17.0.3.1.1:latest
+echo " "
+echo "********************************************************************************************************************************************"
+echo "@@@@@@@@ Java 18 @@@@@@@@@ "
+echo " "
 
+echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 18.0.2.1"
+podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-18.0.2.1:latest
+echo " "
+echo "********************************************************************************************************************************************"
+echo "@@@@@@@@ Java 19 @@@@@@@@@ "
+echo " "
+
+echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 19.0.2"
+podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-19.0.2:latest
+
+echo " "
+echo "********************************************************************************************************************************************"
+echo "@@@@@@@@ Java 20 @@@@@@@@@ "
+echo " "
+
+echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 20.0.2"
+podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-20.0.2:latest
+
+echo " "
+echo "********************************************************************************************************************************************"
+echo "@@@@@@@@ Java 21 @@@@@@@@@ "
+echo " "
+
+echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 21.0.3"
+podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-21.0.3:latest
+
+echo " "
+echo "********************************************************************************************************************************************"
+echo "@@@@@@@@ Java 22 @@@@@@@@@ "
+echo " "
+
+echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 22.0.1"
+podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-22.0.1:latest
+
+echo " "
+echo " "
+echo "Clean up the running images"
+podman rm --all --force
