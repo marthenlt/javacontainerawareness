@@ -1,5 +1,5 @@
 FROM oraclelinux:8
-LABEL MAINTAINER Marthen Luther <marthen.luther@oracle.com>
+LABEL MAINTAINER Marthen Luther <donotemail@nomail.org>
 ENV JAVA_HOME /opt/java
 ENV PATH ${PATH}:${JAVA_HOME}/bin
 
