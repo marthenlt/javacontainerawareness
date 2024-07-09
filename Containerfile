@@ -6,6 +6,7 @@ ENV PATH ${PATH}:${JAVA_HOME}/bin
 RUN mkdir -p /opt/java 
 
 COPY CPUAndMemory.class .
+
 ADD jdk /opt/java/
 
 CMD ["/opt/java/bin/java", "CPUAndMemory"]

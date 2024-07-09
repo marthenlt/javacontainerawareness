@@ -4,13 +4,7 @@ podman rm --all --force
 clear
 
 echo "Running sysctl machdep.cpu.thread_count .. "
-sysctl machdep.cpu.thread_count
-
-echo " "
-
-echo "Running the application directly from my mac .."
-java CPUAndMemory
-
+sysctl machdep.cpu.core_count
 
 echo " "
 echo "Running the application from within a container .. "
@@ -113,7 +107,7 @@ echo "**************************************************************************
 echo "@@@@@@@@ Java 17 @@@@@@@@@ "
 echo " "
 
-echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 17.0.3.1.1"
+echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 17.0.3.1.1 (latest)"
 podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-17.0.3.1.1:latest
 echo " "
 echo "********************************************************************************************************************************************"
@@ -143,7 +137,7 @@ echo "**************************************************************************
 echo "@@@@@@@@ Java 21 @@@@@@@@@ "
 echo " "
 
-echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 21.0.3"
+echo "==> Running the application within a container with CPU set to 1, and memory set to 1 GB [--cpus 1 -m 1G] on Java 21.0.3 (latest)"
 podman run -ti --cpus 1 -m 1G localhost/podman-java-container-on-java-21.0.3:latest
 
 echo " "
